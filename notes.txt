@@ -1,27 +1,27 @@
-Namaste React
-
-# parcel
-Dev Build
-Local server
-HMR = Hot Module Replacement
-
-caching = fast build
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 
+// JSX (transpiled before it reaches the JS) PARCEL Babel
+
+// JSX Babel transpiles it to React.createElement ReactElement-JS Object HTMLElement(render)
+
+//react element using JSX
+const heading = (<h1 
+  id="header" className='heading'>Hello from JSX
+  </h1>);
+//react component
+const HeaderComponent = () => (
+  <h1>I'm Header React functional Component</h1>
+);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeaderComponent />);
 
 
-// //react element using JSX
-// const Title = () => (<h1 id="header" className='heading'>Hello from JSX</h1>);
-// //react component
-// const HeaderComponent = () => (
-//   <div>
-//     <Title />
-//     <h1>I'm Header React functional Component</h1>
-//   </div>
-// );
-// // const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(heading); //object
-// // root.render(heading);
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(heading); //object
+// root.render(heading);
 
 
 
@@ -55,4 +55,6 @@ console.log(parent); //object
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
  */
+
+
 
